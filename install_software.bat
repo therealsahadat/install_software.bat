@@ -1,89 +1,85 @@
 @echo off
-REM Batch Script to Install Software with Links for Manual Download
-
-REM ============================
-REM Web Browsers
-REM ============================
-echo Installing Google Chrome...
-winget install --id=Google.Chrome -e || (
-    echo Google Chrome not found in winget. Visit https://www.google.com/chrome/ to download manually.
-)
 
 echo Installing Mozilla Firefox...
-winget install --id=Mozilla.Firefox -e || (
-    echo Mozilla Firefox not found in winget. Visit https://www.mozilla.org/firefox/ to download manually.
-)
+winget install Mozilla.Firefox
 
-echo Installing Brave Browser...
-winget install --id=Brave.Brave -e || (
-    echo Brave Browser not found in winget. Visit https://brave.com/download/ to download manually.
-)
-
-REM ============================
-REM Media Software
-REM ============================
-echo Installing VLC Media Player...
-winget install --id=VideoLAN.VLC -e || (
-    echo VLC Media Player not found in winget. Visit https://www.videolan.org/vlc/index.html to download manually.
-)
+echo Installing Microsoft 365 Apps for enterprise...
+winget install Microsoft.365
 
 echo Installing PotPlayer...
-winget install --id=Daum.PotPlayer -e || (
-    echo PotPlayer not found in winget. Visit https://potplayer.daum.net/ to download manually.
-)
+winget install PotPlayer.PotPlayer
 
-REM ============================
-REM Development Tools
-REM ============================
-echo Installing OBS Studio...
-winget install --id=OBSProject.OBSStudio -e || (
-    echo OBS Studio not found in winget. Visit https://obsproject.com/download to download manually.
-)
+echo Installing VLC media player...
+winget install VideoLAN.VLC
 
-echo Installing Microsoft Visual Studio Code...
-winget install --id=Microsoft.VisualStudioCode -e || (
-    echo Visual Studio Code not found in winget. Visit https://code.visualstudio.com/Download to download manually.
-)
-
-REM ============================
-REM Utility Software
-REM ============================
 echo Installing WinRAR...
-winget install --id=RARLab.WinRAR -e || (
-    echo WinRAR not found in winget. Visit https://www.rarlab.com/download.htm to download manually.
-)
+winget install RARLab.WinRAR
+
+echo Installing Zotero...
+winget install Zotero.Zotero
 
 echo Installing Zoom...
-winget install --id=Zoom.Zoom -e || (
-    echo Zoom not found in winget. Visit https://zoom.us/download to download manually.
-)
+winget install Zoom.Zoom
+
+echo Installing Google Chrome...
+winget install Google.Chrome
+
+echo Installing NetSpeedMonitor...
+winget install NetSpeedMonitor.NetSpeedMonitor
 
 echo Installing AnyDesk...
-winget install --id=AnyDeskSoftwareGmbH.AnyDesk -e || (
-    echo AnyDesk not found in winget. Visit https://anydesk.com/en/downloads to download manually.
-)
+winget install AnyDesk.AnyDesk
+
+echo Installing Avro Keyboard...
+winget install Avro.Keyboard
+
+echo Installing Brave...
+winget install Brave.Brave
+
+echo Installing Internet Download Manager...
+winget install Internet.Download.Manager
 
 echo Installing Microsoft Edge...
-winget install --id=Microsoft.Edge -e || (
-    echo Microsoft Edge not found in winget. Visit https://www.microsoft.com/edge to download manually.
-)
+winget install Microsoft.Edge
 
-REM ============================
-REM Drivers and Support Tools
-REM ============================
-echo Installing Intel Driver & Support Assistant...
-winget install --id=Intel.DSA -e || (
-    echo Intel DSA not found in winget. Visit https://www.intel.com/content/www/us/en/support/detect.html to download manually.
-)
+echo Installing OBS Studio...
+winget install OBSProject.OBSStudio
 
-REM ============================
-REM Reference Management Tool
-REM ============================
-echo Installing Zotero...
-winget install --id=Zotero.Zotero -e || (
-    echo Zotero not found in winget. Visit https://www.zotero.org/download/ to download manually.
-)
+echo Installing qBittorrent...
+winget install qBittorrent.qBittorrent
 
-echo.
-echo Installation process completed!
+echo Installing Realtek Audio Driver...
+winget install Realtek.Audio.Driver
+
+echo Installing Canva...
+winget install Canva.Canva
+
+echo Installing CapCut...
+winget install CapCut.CapCut
+
+echo Installing Grammarly for Windows...
+winget install Grammarly.Grammarly
+
+echo Installing Microsoft OneDrive...
+winget install Microsoft.OneDrive
+
+echo Installing Spotify...
+winget install Spotify.Spotify
+
+echo Installing Telegram Desktop...
+winget install Telegram.TelegramDesktop
+
+echo Installing Net Monitor...
+winget install NetMonitor.NetMonitor
+
+echo Installing WhatsApp...
+winget install WhatsApp.WhatsApp
+
+echo Installing Microsoft Photos Legacy...
+winget install Microsoft.PhotosLegacy
+
+echo Installing Snipping Tool...
+winget install Microsoft.SnippingTool
+
+echo Installation complete!
 pause
